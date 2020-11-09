@@ -10,3 +10,6 @@ jobs:
       with:
         # The branch to create
         branch: test-uat
+    env:
+      # This is necessary in order to push a commit to the repo
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged:  
