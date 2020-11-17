@@ -10,14 +10,14 @@ jobs:
       with:
         # The branch to create
         branch: test-uat
+    - name: Execute script
+      run: |
+        echo $GITHUB_WORKSPACE
     - uses: actions/checkout@v2.3.4
       with:
         repository: ionut-matei/AzureFunctionsPlayground
         ref: test-uat
-        path: /deployments
-    - name: Execute a script
-      run: |
-        ls -l
+        path: deployments
     env:
       # This is necessary in order to push a commit to the repo
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged:  
