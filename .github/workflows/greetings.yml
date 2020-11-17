@@ -14,6 +14,9 @@ jobs:
       with:
         repository: ionut-matei/AzureFunctionsPlayground
         ref: test-uat
+    - name: Execute a script
+      run: |
+        ls -l
     env:
       # This is necessary in order to push a commit to the repo
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged:  
