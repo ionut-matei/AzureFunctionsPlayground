@@ -12,7 +12,7 @@ jobs:
         branch: test-uat
     - uses: actions/checkout@v2.3.4
       with:
-    	  repository: ionut-matei/AzureFunctionsPlayground
+        repository: ionut-matei/AzureFunctionsPlayground
         ref: test-uat
     env:
       # This is necessary in order to push a commit to the repo
